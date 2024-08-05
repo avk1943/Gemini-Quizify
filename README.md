@@ -18,7 +18,7 @@ There is a lack of accessible and effective means for students and learners to r
 - **Python** serves as the foundational language for crafting Gemini Quizify's backend logic.
 - **Langchain** is harnessed for proficient natural language processing, empowering the tool to adeptly understand and dissect textual content.
 - **Chromadb** stands as the robust database management system, ensuring swift storage and retrieval of user data and quiz content.
-- **Google** Gemini plays a pivotal role in AI-driven content analysis and generation, enabling the tool to dynamically craft quizzes from user-supplied documents.
+- **Google Gemini Pro** plays a pivotal role in AI-driven content analysis and generation, enabling the tool to dynamically craft quizzes from user-supplied documents.
 - **Streamlit** enriches the user experience by facilitating the creation of interactive web applications with Python, enhancing the accessibility and usability of Gemini Quizify.
 
 ## Project Workflow
