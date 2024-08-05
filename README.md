@@ -61,7 +61,7 @@ To run the Quiz Builder:
    ```bash
     streamlit run <your_script>.py
 
-Replace <your_script> with the name of the Python script you want to run.
+Replace <your_script> with the name of the Python script you want to run. "main.py" is the final product of the project.
 
 Follow the instructions in the Streamlit interface to interact with the Quiz Builder.
 
