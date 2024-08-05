@@ -8,7 +8,7 @@ There is a lack of accessible and effective means for students and learners to r
 
 ## Features
 
-- **AI-Generated Assessments and Quizzes:** Utilizing artificial intelligence, the tool will dynamically generate quizzes and assessments based on user-provided documents, such as textbooks and scholarly papers.
+- **AI-Generated Assessments and Quizzes:** The tool utilizes artificial intelligence to dynamically generate quizzes and assessments based on user-provided documents, such as textbooks and scholarly papers.
 - **Instant Feedback:** Users will receive immediate feedback on their quiz performance, allowing them to quickly identify areas of strength and areas needing improvement.
 - **Comprehensive Explanations:** Detailed explanations will be provided for each question, enabling users to understand the reasoning behind correct answers and learn from mistakes.
 - **Tailored Learning Experience:** The quizzes will be customized to the content of the user-provided documents, ensuring relevance and alignment with the topics being studied.
@@ -25,16 +25,16 @@ There is a lack of accessible and effective means for students and learners to r
 
 Using scripts, the following tasks are implemented.
 
-1. **Document Processing**: Utilizing Google Gemini for document processing.
-2. **Text Embeddings**: Generating embeddings with Langchain.
-3. **Authentication**: Integrating Google Service Account for secure API access.
-4. **PDF Ingestion**: Loading documents using a PDF loader.
-5. **User Interface**: Building an interface with Streamlit.
-6. **Quiz Generation**: Creating quizzes based on user-specified topics.
-7. **Answer Explanations**: Providing detailed explanations for quiz answers.
-8. **Navigation Controls**: Implementing navigation within the quiz interface.
-9. **Error Handling**: Ensuring robust error handling and validation.
-10. **Deployment**: Considering packaging and deployment strategies.
+1. **Authentication**: Integrating Google Service Account for secure API access.
+2. **Document Processing**: Utilizing LangChain's PyPDFLoader for document processing.
+3. **Text Embeddings**: Generating embeddings using VertexAIs text embeddings through LangChain.
+5. **PDF Ingestion**: Loading documents and creating a vector database using ChromaDB.
+6. **User Interface**: Building an interface with Streamlit.
+7. **Quiz Generation**: Creating quizzes based on user-specified topics.
+8. **Answer Explanations**: Providing detailed explanations for quiz answers.
+9. **Navigation Controls**: Implementing navigation within the quiz interface.
+10. **Error Handling**: Ensuring robust error handling and validation.
+11. **Deployment**: Considering packaging and deployment strategies.
 
 ![Implementation Workflow](https://github.com/user-attachments/assets/f788b527-31bf-47b6-be34-3560520e1966)
 
