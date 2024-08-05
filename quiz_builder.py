@@ -1,10 +1,12 @@
+# task_6
+
 import sys
 import os
 import streamlit as st
 sys.path.append(os.path.abspath('../../'))
-from tasks.task_3.task_3 import DocumentProcessor
-from tasks.task_4.task_4 import EmbeddingClient
-from tasks.task_5.task_5 import ChromaCollectionCreator
+from pdf_processing import DocumentProcessor
+from embedding_client import EmbeddingClient
+from chroma_collection_creator import ChromaCollectionCreator
 
 if __name__ == "__main__":
     st.header("Quizzify")
@@ -20,12 +22,12 @@ if __name__ == "__main__":
     with screen.container():
         #st.header("Quizzify")
         
-        # 1) Initalize DocumentProcessor and Ingest Documents from Task 3
+        # 1) Initalize DocumentProcessor and Ingest Documents from pdf_processing
         document_processor = DocumentProcessor()
         document_processor.ingest_documents()
-        # 2) Initalize the EmbeddingClient from Task 4 with embed config
+        # 2) Initalize the EmbeddingClient from embedding_client with embed config
         embedding_client = embedding_client = EmbeddingClient(**embed_config)
-        # 3) Initialize the ChromaCollectionCreator from Task 5
+        # 3) Initialize the ChromaCollectionCreator from chroma_collection_creator
         chroma_creator = ChromaCollectionCreator(document_processor, embedding_client)
 
         with st.form("Load Data to Chroma"):
